@@ -126,7 +126,7 @@
     </section>
     <!-- /hero -->
 
-    <!-- section -->
+    <!-- benefits -->
     <section class="section">
       <div class="container">
         <!-- ! h2 should be hidden -->
@@ -171,8 +171,8 @@
         </ul>
       </div>
     </section>
-    <!-- /section -->
-
+    <!-- /benefits -->
+    <!-- services -->
     <section class="section services-section">
       <div class="container">
 
@@ -192,12 +192,15 @@
                   "
                   type="image/webp">
 
-                <img
+                <source
                   srcset="
                   ./images/services/services1-desktop-370.jpg 370w,
                   ./images/services/services1-desktop-740.jpg 740w,
                   ./images/services/services1-desktop-1110.jpg 1110w
                   "
+                  type="image/jpeg">
+
+                <img
                   src="./images/services/services1-desktop-370.jpg"
                   alt="Разработка эффектвных решений с нуля"
                   width="370px">
@@ -221,12 +224,15 @@
                   "
                   type="image/webp">
 
-                <img
+                <source
                   srcset="
                   ./images/services/services2-desktop-370.jpg 370w,
                   ./images/services/services2-desktop-740.jpg 740w,
                   ./images/services/services2-desktop-1110.jpg 1110w
                   "
+                  type="image/jpeg">
+
+                <img
                   src="./images/services/services2-desktop-370.jpg"
                   alt="Создание мобильных приложений"
                   width="370px">
@@ -249,16 +255,17 @@
                   ./images/services/services3-desktop-1110.webp 1110w
                   "
                   type="image/webp">
-
-                <img
+                <source
                   srcset="
                   ./images/services/services3-desktop-370.jpg 370w,
                   ./images/services/services3-desktop-740.jpg 740w,
                   ./images/services/services3-desktop-1110.jpg 1110w
                   "
+                  type="image/jpeg">
+
+                <img
                   src="./images/services/services3-desktop-370.jpg"
                   alt="Дизайнерские решения"
-
                   width="370px">
               </picture>
             </div>
@@ -271,7 +278,421 @@
         </ul>
       </div>
     </section>
+    <!-- /services -->
+    <!-- team section -->
+    <section class="section team-section">
+      <div class="container">
 
+        <h2 class="section__title">Наша команда</h2>
+
+        <ul class="team list">
+          <!-- 1st item -->
+          <li class="team__item">
+
+            <picture>
+              <!-- webp -->
+              <source
+                srcset="
+                ./images/team/teammate1-desktop-270.webp 270w,
+                ./images/team/teammate1-desktop-540.webp 540w,
+                ./images/team/teammate1-desktop-810.webp 810w,
+                ./images/team/teammate1-tablet-354.webp 354w,
+                ./images/team/teammate1-tablet-708.webp 708w,
+                ./images/team/teammate1-tablet-1062.webp 1062w,
+                ./images/team/teammate1-mobile-450.webp 450w,
+                ./images/team/teammate1-mobile-900.webp 900w,
+                ./images/team/teammate1-mobile-1350.webp 1350w
+                "
+                type="image/webp"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width:767.98px) 450px">
+              <!-- jpg -->
+              <source
+                srcset="
+                ./images/team/teammate1-desktop-270.jpg 270w,
+                ./images/team/teammate1-desktop-540.jpg 540w,
+                ./images/team/teammate1-desktop-810.jpg 810w
+                "
+                type="image/jpeg"
+                media="(min-width:1200px)">
+
+              <source
+                srcset="
+                ./images/team/teammate1-tablet-354.jpg 354w,
+                ./images/team/teammate1-tablet-708.jpg 708w,
+                ./images/team/teammate1-tablet-1062.jpg 1062w
+                "
+                type="image/jpeg"
+                media="(min-width:768px)">
+
+              <source
+                srcset="
+                ./images/team/teammate1-mobile-450.jpg 450w,
+                ./images/team/teammate1-mobile-900.jpg 900w,
+                ./images/team/teammate1-mobile-1350.jpg 1350w
+                "
+                type="image/jpeg"
+                media="(max-width:767.98px)">
+
+              <img
+                src="./images/team/teammate1-mobile-450.jpg"
+                alt="Игорь Демьяненко">
+            </picture>
+
+            <div class="team__teammate-info">
+              <h3 class="team__teammate-name">Игорь Демьяненко</h3>
+              <p class="team__teammate-position" lang="en">Product Designer</p>
+
+              <ul class="socials list">
+                <li class="socials__item">
+                  <a href="" class="socials__link link">
+                    <svg class="socials__icon" width="20" height="20" aria-label="Instagram button">
+                      <use href="./images/icons/symbol-defs.svg#icon-socials-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="" class="socials__link link">
+                    <svg class="socials__icon" width="20" height="20" aria-label="Twitter Button">
+                      <use href="./images/icons/symbol-defs.svg#icon-socials-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="" class="socials__link link">
+                    <svg class="socials__icon" width="20" height="20" aria-label="Facebook Button">
+                      <use href="./images/icons/symbol-defs.svg#icon-socials-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="" class="socials__link link">
+                    <svg class="socials__icon" width="20" height="20" aria-label="LinkedIn Button">
+                      <use href="./images/icons/symbol-defs.svg#icon-socials-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </li>
+
+          <!-- 2nd item -->
+          <li class="team__item">
+
+            <picture>
+              <!-- webp -->
+              <source
+                srcset="
+                ./images/team/teammate2-desktop-270.webp 270w,
+                ./images/team/teammate2-desktop-540.webp 540w,
+                ./images/team/teammate2-desktop-810.webp 810w
+                "
+                type="image/webp"
+                media="(min-width:1200px)">
+
+              <source
+                srcset="
+                ./images/team/teammate2-tablet-354.webp 354w,
+                ./images/team/teammate2-tablet-708.webp 708w,
+                ./images/team/teammate2-tablet-1062.webp 1062w
+                "
+                type="image/webp"
+                media="(min-width:768px)">
+
+              <source
+                srcset="
+                ./images/team/teammate2-mobile-450.webp 450w,
+                ./images/team/teammate2-mobile-900.webp 900w,
+                ./images/team/teammate2-mobile-1350.webp 1350w
+                "
+                type="image/webp"
+                media="(max-width:767.98px)">
+
+              <!-- jpg -->
+              <source
+                srcset="
+                ./images/team/teammate2-desktop-270.jpg 270w,
+                ./images/team/teammate2-desktop-540.jpg 540w,
+                ./images/team/teammate2-desktop-810.jpg 810w
+                "
+                type="image/jpeg"
+                media="(min-width:1200px)">
+
+              <source
+                srcset="
+                ./images/team/teammate2-tablet-354.jpg 354w,
+                ./images/team/teammate2-tablet-708.jpg 708w,
+                ./images/team/teammate2-tablet-1062.jpg 1062w
+                "
+                type="image/jpeg"
+                media="(min-width:768px)">
+
+              <source
+                srcset="
+                ./images/team/teammate2-mobile-450.jpg 450w,
+                ./images/team/teammate2-mobile-900.jpg 900w,
+                ./images/team/teammate2-mobile-1350.jpg 1350w
+                "
+                type="image/jpeg"
+                media="(max-width:767.98px)">
+
+              <img
+                src="./images/team/teammate2-mobile-450.jpg"
+                alt="Ольга Репина"
+                width="270px">
+            </picture>
+
+            <div class="team__teammate-info">
+              <h3 class="team__teammate-name">Ольга Репина</h3>
+              <p class="team__teammate-position" lang="en">Frontend Developer</p>
+
+              <ul class="socials list">
+                <li class="socials__item">
+                  <a href="" class="socials__link link">
+                    <svg class="socials__icon" width="20" height="20" aria-label="Instagram button">
+                      <use href="./images/icons/symbol-defs.svg#icon-socials-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="" class="socials__link link">
+                    <svg class="socials__icon" width="20" height="20" aria-label="Twitter Button">
+                      <use href="./images/icons/symbol-defs.svg#icon-socials-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="" class="socials__link link">
+                    <svg class="socials__icon" width="20" height="20" aria-label="Facebook Button">
+                      <use href="./images/icons/symbol-defs.svg#icon-socials-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="" class="socials__link link">
+                    <svg class="socials__icon" width="20" height="20" aria-label="LinkedIn Button">
+                      <use href="./images/icons/symbol-defs.svg#icon-socials-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </li>
+
+          <!-- 3rd item -->
+          <li class="team__item">
+
+            <picture>
+              <!-- webp -->
+              <source
+                srcset="
+                ./images/team/teammate3-desktop-270.webp 270w,
+                ./images/team/teammate3-desktop-540.webp 540w,
+                ./images/team/teammate3-desktop-810.webp 810w
+                "
+                type="image/webp"
+                media="(min-width:1200px)">
+
+              <source
+                srcset="
+                ./images/team/teammate3-tablet-354.webp 354w,
+                ./images/team/teammate3-tablet-708.webp 708w,
+                ./images/team/teammate3-tablet-1062.webp 1062w
+                "
+                type="image/webp"
+                media="(min-width:768px)">
+
+              <source
+                srcset="
+                ./images/team/teammate3-mobile-450.webp 450w,
+                ./images/team/teammate3-mobile-900.webp 900w,
+                ./images/team/teammate3-mobile-1350.webp 1350w
+                "
+                type="image/webp"
+                media="(max-width:767.98px)">
+
+              <!-- jpg -->
+              <source
+                srcset="
+                ./images/team/teammate3-desktop-270.jpg 270w,
+                ./images/team/teammate3-desktop-540.jpg 540w,
+                ./images/team/teammate3-desktop-810.jpg 810w
+                "
+                type="image/jpeg"
+                media="(min-width:1200px)">
+
+              <source
+                srcset="
+                ./images/team/teammate3-tablet-354.jpg 354w,
+                ./images/team/teammate3-tablet-708.jpg 708w,
+                ./images/team/teammate3-tablet-1062.jpg 1062w
+                "
+                type="image/jpeg"
+                media="(min-width:768px)">
+
+              <source
+                srcset="
+                ./images/team/teammate3-mobile-450.jpg 450w,
+                ./images/team/teammate3-mobile-900.jpg 900w,
+                ./images/team/teammate3-mobile-1350.jpg 1350w
+                "
+                type="image/jpeg"
+                media="(max-width:767.98px)">
+
+              <img
+                src="./images/team/teammate3-mobile-450.jpg"
+                alt="Николай Тарасов"
+                width="270px">
+            </picture>
+
+            <div class="team__teammate-info">
+              <h3 class="team__teammate-name">Николай Тарасов</h3>
+              <p class="team__teammate-position" lang="en">Marketing</p>
+
+              <ul class="socials list">
+                <li class="socials__item">
+                  <a href="" class="socials__link link">
+                    <svg class="socials__icon" width="20" height="20" aria-label="Instagram button">
+                      <use href="./images/icons/symbol-defs.svg#icon-socials-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="" class="socials__link link">
+                    <svg class="socials__icon" width="20" height="20" aria-label="Twitter Button">
+                      <use href="./images/icons/symbol-defs.svg#icon-socials-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="" class="socials__link link">
+                    <svg class="socials__icon" width="20" height="20" aria-label="Facebook Button">
+                      <use href="./images/icons/symbol-defs.svg#icon-socials-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="" class="socials__link link">
+                    <svg class="socials__icon" width="20" height="20" aria-label="LinkedIn Button">
+                      <use href="./images/icons/symbol-defs.svg#icon-socials-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </li>
+
+          <!-- 4th item -->
+          <li class="team__item">
+
+            <picture>
+              <!-- webp -->
+              <source
+                srcset="
+                ./images/team/teammate4-desktop-270.webp 270w,
+                ./images/team/teammate4-desktop-540.webp 540w,
+                ./images/team/teammate4-desktop-810.webp 810w
+                "
+                type="image/webp"
+                media="(min-width:1200px)">
+
+              <source
+                srcset="
+                ./images/team/teammate4-tablet-354.webp 354w,
+                ./images/team/teammate4-tablet-708.webp 708w,
+                ./images/team/teammate4-tablet-1062.webp 1062w
+                "
+                type="image/webp"
+                media="(min-width:768px)">
+
+              <source
+                srcset="
+                ./images/team/teammate4-mobile-450.webp 450w,
+                ./images/team/teammate4-mobile-900.webp 900w,
+                ./images/team/teammate4-mobile-1350.webp 1350w
+                "
+                type="image/webp"
+                media="(max-width:767.98px)">
+
+              <!-- jpg -->
+              <source
+                srcset="
+                ./images/team/teammate4-desktop-270.jpg 270w,
+                ./images/team/teammate4-desktop-540.jpg 540w,
+                ./images/team/teammate4-desktop-810.jpg 810w
+                "
+                type="image/jpeg"
+                media="(min-width:1200px)">
+
+              <source
+                srcset="
+                ./images/team/teammate4-tablet-354.jpg 354w,
+                ./images/team/teammate4-tablet-708.jpg 708w,
+                ./images/team/teammate4-tablet-1062.jpg 1062w
+                "
+                type="image/jpeg"
+                media="(min-width:768px)">
+
+              <source
+                srcset="
+                ./images/team/teammate4-mobile-450.jpg 450w,
+                ./images/team/teammate4-mobile-900.jpg 900w,
+                ./images/team/teammate4-mobile-1350.jpg 1350w
+                "
+                type="image/jpeg"
+                media="(max-width:767.98px)">
+
+              <img
+                src="./images/team/teammate4-mobile-450.jpg"
+                alt="Михаил Ермаков"
+                width="270px">
+            </picture>
+
+
+            <div class="team__teammate-info">
+              <h3 class="team__teammate-name">Михаил Ермаков</h3>
+              <p class="team__teammate-position" lang="en">UI Designer</p>
+
+              <ul class="socials list">
+                <li class="socials__item">
+                  <a href="" class="socials__link link">
+                    <svg class="socials__icon" width="20" height="20" aria-label="Instagram button">
+                      <use href="./images/icons/symbol-defs.svg#icon-socials-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="" class="socials__link link">
+                    <svg class="socials__icon" width="20" height="20" aria-label="Twitter Button">
+                      <use href="./images/icons/symbol-defs.svg#icon-socials-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="" class="socials__link link">
+                    <svg class="socials__icon" width="20" height="20" aria-label="Facebook Button">
+                      <use href="./images/icons/symbol-defs.svg#icon-socials-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="" class="socials__link link">
+                    <svg class="socials__icon" width="20" height="20" aria-label="LinkedIn Button">
+                      <use href="./images/icons/symbol-defs.svg#icon-socials-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+    <!-- /team section -->
   </main>
   <!-- /main -->
 
