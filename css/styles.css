@@ -1,0 +1,16 @@
+/* удалить если есть normalize.css */
+html {
+  box-sizing: border-box;
+}
+/* удалить если есть normalize.css */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  /* чтобы убрать отступы по углам */
+  /* удалить если есть normalize.css */
+  margin: 0;
+  /* задаются текст, размер шрифта */
+}

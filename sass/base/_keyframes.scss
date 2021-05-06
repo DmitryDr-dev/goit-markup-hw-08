@@ -1,0 +1,19 @@
+@keyframes planeMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  45% {
+    opacity: 1;
+    transform: translate(-10px, 10px) scale(1.1);
+  }
+  50% {
+    opacity: 0.95;
+  }
+  80% {
+    opacity: 0.1;
+    transform: translate(25px, -15px) scale(0.2);
+  }
+  85% {
+    opacity: 0;
+  }
+}
