@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WebStudio</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -13,7 +16,7 @@
 
   <!-- header -->
   <header class="header">
-    <div class="container">
+    <div class="container header__container">
       <a class="logo header__logo" href="./index.html">
         Web<span class="logo--dark">Studio</span>
       </a>
@@ -122,6 +125,54 @@
       </div>
     </section>
     <!-- /hero -->
+
+    <!-- section -->
+    <section class="section">
+      <div class="container">
+        <!-- ! h2 should be hidden -->
+        <h2 class="visually-hidden">Преимущества работы с нами</h2>
+        <ul class="benefits list">
+          <li class="benefits__item">
+            <div class="benefits__icon-box">
+              <svg class="benefits__icon" width="70" height="70">
+                <use href="./images/icons/symbol-defs.svg#icon-benefits-antenna"></use>
+              </svg>
+            </div>
+            <h3 class="benefits__item-title">Внимание к деталям</h3>
+            <p class="benefits__item-desc">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__icon-box">
+              <svg class="benefits__icon" width="70" height="70">
+                <use href="./images/icons/symbol-defs.svg#icon-benefits-clock"></use>
+              </svg>
+            </div>
+            <h3 class="benefits__item-title">Пунктуальность</h3>
+            <p class="benefits__item-desc">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__icon-box">
+              <svg class="benefits__icon" width="70" height="70">
+                <use href="./images/icons/symbol-defs.svg#icon-benefits-diagram"></use>
+              </svg>
+            </div>
+            <h3 class="benefits__item-title">Планирование</h3>
+            <p class="benefits__item-desc">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__icon-box">
+              <svg class="benefits__icon" width="70" height="70">
+                <use href="./images/icons/symbol-defs.svg#icon-benefits-astronaut"></use>
+              </svg>
+            </div>
+            <h3 class="benefits__item-title">Современные технологии</h3>
+            <p class="benefits__item-desc">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /section -->
+
   </main>
   <!-- /main -->
 
