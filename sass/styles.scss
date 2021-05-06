@@ -15,6 +15,7 @@
 // components - маленькие фрагменты, которые вкладываются в разные блоки
 @import "./components/logo";
 @import "./components/btn";
+@import "./components/socials";
 
 // layouts - основная разметка. Глобальные секции: сетки, секции, хедер, галереи, гриды
 @import "./layouts/section";
@@ -22,3 +23,4 @@
 @import "./layouts/hero";
 @import "./layouts/benefits";
 @import "./layouts/services";
+@import "./layouts/team";

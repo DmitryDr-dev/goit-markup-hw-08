@@ -1,13 +1,21 @@
-.benefits {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: calc(-1 * var(--grid-item-r-gap));
-    margin-bottom: calc(-1 * var(--grid-item-b-gap));
-  }
+.team-section {
+  background-color: var(--secondary-bg-color);
 }
 
-.benefits__item {
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-1 * var(--grid-item-r-gap));
+  margin-bottom: calc(-1 * var(--grid-item-b-gap));
+}
+
+.team__item {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: var(--primary-bg-color);
+
   @media screen and (max-width: 767.98px) {
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -20,7 +28,6 @@
   }
 
   // calc((100% - кол-во_элементов_в_строке * значение_одного_отступа) / кол-во_элементов_в_строке)
-
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     flex-basis: calc(
       (100% - var(--grid-item-qt) * var(--grid-item-r-gap)) /
@@ -37,25 +44,19 @@
   }
 }
 
-.benefits__icon-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  height: 120px;
-  background-color: var(--secondary-bg-color);
+.team__teammate-info {
+  padding: 30px 0;
 }
 
-.benefits__item-title {
+.team__teammate-name {
   margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
   color: var(--title-text-color);
-  text-align: center;
 }
-
-.benefits__item-desc {
+.team__teammate-position {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
 }
