@@ -17,5 +17,7 @@
 @import "./components/btn";
 
 // layouts - основная разметка. Глобальные секции: сетки, секции, хедер, галереи, гриды
+@import "./layouts/section";
 @import "./layouts/header";
 @import "./layouts/hero";
+@import "./layouts/benefits";
