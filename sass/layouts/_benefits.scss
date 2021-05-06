@@ -1,5 +1,15 @@
 .benefits {
   @extend %list-reset;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * var(--grid-item-r-gap));
+    margin-bottom: calc(-1 * var(--grid-item-b-gap));
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  }
 }
 
 .benefits__item {
@@ -7,6 +17,28 @@
     &:not(:last-child) {
       margin-bottom: 30px;
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: var(--grid-item-r-gap);
+    margin-bottom: var(--grid-item-b-gap);
+  }
+
+  // calc((100% - кол-во_элементов_в_строке * значение_одного_отступа) / кол-во_элементов_в_строке)
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc(
+      (100% - var(--grid-item-qt) * var(--grid-item-r-gap)) /
+        var(--grid-item-qt)
+    );
+  }
+
+  @media screen and (min-width: 1200px) {
+    --grid-item-qt: 4;
+    flex-basis: calc(
+      (100% - var(--grid-item-qt) * var(--grid-item-r-gap)) /
+        var(--grid-item-qt)
+    );
   }
 }
 
