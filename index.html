@@ -17,7 +17,7 @@
   <!-- header -->
   <header class="header">
     <div class="container header__container">
-      <a class="logo header__logo" href="./index.html">
+      <a class="logo header__logo link" href="./index.html">
         Web<span class="logo--dark">Studio</span>
       </a>
 
@@ -44,28 +44,28 @@
         data-menu>
 
 
-        <ul class="main-nav__menu">
+        <ul class="main-nav__menu list">
           <li class="main-nav__menu-item">
-            <a class="main-nav__menu-link main-nav__menu-link--active" href="./index.html">
+            <a class="main-nav__menu-link main-nav__menu-link--active link" href="./index.html">
               Студия
             </a>
           </li>
           <li class="main-nav__menu-item">
-            <a class="main-nav__menu-link" href="./portfolio.html">
+            <a class="main-nav__menu-link link" href="./portfolio.html">
               Портфолио
             </a>
           </li>
           <li class="main-nav__menu-item">
-            <a class="main-nav__menu-link" href="">
+            <a class="main-nav__menu-link link" href="">
               Контакты
             </a>
           </li>
         </ul>
 
-        <ul class="main-nav__contacts">
+        <ul class="main-nav__contacts list">
 
           <li class="main-nav__contacts-item">
-            <a class="main-nav__contacts-link main-nav__contacts-link--accented"
+            <a class="main-nav__contacts-link main-nav__contacts-link--accented link"
               href="tel:+380961111111">
               <svg class="main-nav__contacts-icon" width="10" height="16">
                 <use href="./images/icons/symbol-defs.svg#icon-header-tel"></use>
@@ -75,7 +75,7 @@
           </li>
 
           <li class="main-nav__contacts-item">
-            <a class="main-nav__contacts-link"
+            <a class="main-nav__contacts-link link"
               href="mailto:info@devstudio.com">
               <svg class="main-nav__contacts-icon" width="16" height="12">
                 <use href="./images/icons/symbol-defs.svg#icon-header-mail"></use>
@@ -86,24 +86,24 @@
 
         </ul>
 
-        <ul class="main-nav__socials">
+        <ul class="main-nav__socials list">
           <li class="main-nav__socials-item">
-            <a class="main-nav__socials-link" href="" target="_blank" rel="noreferrer noopener">
+            <a class="main-nav__socials-link link" href="" target="_blank" rel="noreferrer noopener">
               Instagram
             </a>
           </li>
           <li class="main-nav__socials-item">
-            <a class="main-nav__socials-link" href="" target="_blank" rel="noreferrer noopener">
+            <a class="main-nav__socials-link link" href="" target="_blank" rel="noreferrer noopener">
               Twitter
             </a>
           </li>
           <li class="main-nav__socials-item">
-            <a class="main-nav__socials-link" href="" target="_blank" rel="noreferrer noopener">
+            <a class="main-nav__socials-link link" href="" target="_blank" rel="noreferrer noopener">
               Facebook
             </a>
           </li>
           <li class="main-nav__socials-item">
-            <a class="main-nav__socials-link" href="" target="_blank" rel="noreferrer noopener">
+            <a class="main-nav__socials-link link" href="" target="_blank" rel="noreferrer noopener">
               LinkedIn
             </a>
           </li>
@@ -131,7 +131,7 @@
       <div class="container">
         <!-- ! h2 should be hidden -->
         <h2 class="visually-hidden">Преимущества работы с нами</h2>
-        <ul class="benefits">
+        <ul class="benefits list">
           <li class="benefits__item">
             <div class="benefits__icon-box">
               <svg class="benefits__icon" width="70" height="70">
@@ -178,28 +178,96 @@
 
         <h2 class="section__title ">Чем мы занимаемся</h2>
 
-        <ul class="services">
+        <ul class="services list">
+
           <li class="services__item">
-            <img src="./images/services/img-1.jpg"
-              alt="Разработка эффектвных решений с нуля">
-            <div class="services__img-label">
+
+            <div class="services__img-container">
+              <picture>
+                <source
+                  srcset="
+                  ./images/services/services1-desktop-370.webp 370w,
+                  ./images/services/services1-desktop-740.webp 740w,
+                  ./images/services/services1-desktop-1110.webp 1110w
+                  "
+                  type="image/webp">
+
+                <img
+                  srcset="
+                  ./images/services/services1-desktop-370.jpg 370w,
+                  ./images/services/services1-desktop-740.jpg 740w,
+                  ./images/services/services1-desktop-1110.jpg 1110w
+                  "
+                  src="./images/services/services1-desktop-370.jpg"
+                  alt="Разработка эффектвных решений с нуля"
+                  width="370px">
+              </picture>
+            </div>
+
+            <div class="services__label">
               <p>Десктопные приложения</p>
             </div>
           </li>
+
           <li class="services__item">
-            <img src="./images/services/img-2.jpg"
-              alt="Создание мобильных приложений">
-            <div class="services__img-label">
+
+            <div class="services__img-container">
+              <picture>
+                <source
+                  srcset="
+                  ./images/services/services2-desktop-370.webp 370w,
+                  ./images/services/services2-desktop-740.webp 740w,
+                  ./images/services/services2-desktop-1110.webp 1110w
+                  "
+                  type="image/webp">
+
+                <img
+                  srcset="
+                  ./images/services/services2-desktop-370.jpg 370w,
+                  ./images/services/services2-desktop-740.jpg 740w,
+                  ./images/services/services2-desktop-1110.jpg 1110w
+                  "
+                  src="./images/services/services2-desktop-370.jpg"
+                  alt="Создание мобильных приложений"
+                  width="370px">
+              </picture>
+            </div>
+
+            <div class="services__label">
               <p>Мобильные приложения</p>
             </div>
           </li>
+
           <li class="services__item">
-            <img src="./images/services/img-3.jpg"
-              alt="Современные стандарты проектирования">
-            <div class="services__img-label">
+
+            <div class="services__img-container">
+              <picture>
+                <source
+                  srcset="
+                  ./images/services/services3-desktop-370.webp 370w,
+                  ./images/services/services3-desktop-740.webp 740w,
+                  ./images/services/services3-desktop-1110.webp 1110w
+                  "
+                  type="image/webp">
+
+                <img
+                  srcset="
+                  ./images/services/services3-desktop-370.jpg 370w,
+                  ./images/services/services3-desktop-740.jpg 740w,
+                  ./images/services/services3-desktop-1110.jpg 1110w
+                  "
+                  src="./images/services/services3-desktop-370.jpg"
+                  alt="Дизайнерские решения"
+
+                  width="370px">
+              </picture>
+            </div>
+
+            <div class="services__label">
               <p>Дизайнерские решения</p>
             </div>
           </li>
+
         </ul>
       </div>
     </section>

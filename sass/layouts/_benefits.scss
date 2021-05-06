@@ -1,6 +1,4 @@
 .benefits {
-  @extend %list-reset;
-
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -8,12 +6,12 @@
     margin-bottom: calc(-1 * var(--grid-item-b-gap));
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   }
 }
 
 .benefits__item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -26,7 +24,7 @@
 
   // calc((100% - кол-во_элементов_в_строке * значение_одного_отступа) / кол-во_элементов_в_строке)
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     flex-basis: calc(
       (100% - var(--grid-item-qt) * var(--grid-item-r-gap)) /
         var(--grid-item-qt)
@@ -52,8 +50,6 @@
 }
 
 .benefits__item-title {
-  @extend %heading-reset;
-
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -65,5 +61,4 @@
 }
 
 .benefits__item-desc {
-  @extend %paragraph-reset;
 }

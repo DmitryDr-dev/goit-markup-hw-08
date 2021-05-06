@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-color: var(--dark-bg-color);
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -49,7 +49,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -88,7 +88,7 @@
     }
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     // max-width: 480px;
     height: 400px;
   }
@@ -144,8 +144,6 @@
 }
 
 .hero__title {
-  @extend %heading-reset;
-
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 26px;
