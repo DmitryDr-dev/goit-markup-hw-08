@@ -3,18 +3,20 @@
 }
 
 .team {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: calc(-1 * var(--grid-item-r-gap));
-  margin-bottom: calc(-1 * var(--grid-item-b-gap));
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * var(--grid-item-r-gap));
+    margin-bottom: calc(-1 * var(--grid-item-b-gap));
+  }
 }
 
 .team__item {
+  background-color: var(--primary-bg-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   text-align: center;
-  background-color: var(--primary-bg-color);
 
   @media screen and (max-width: 767.98px) {
     &:not(:last-child) {
@@ -25,10 +27,6 @@
   @media screen and (min-width: 768px) {
     margin-right: var(--grid-item-r-gap);
     margin-bottom: var(--grid-item-b-gap);
-  }
-
-  // calc((100% - кол-во_элементов_в_строке * значение_одного_отступа) / кол-во_элементов_в_строке)
-  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     flex-basis: calc(
       (100% - var(--grid-item-qt) * var(--grid-item-r-gap)) /
         var(--grid-item-qt)
@@ -37,10 +35,6 @@
 
   @media screen and (min-width: 1200px) {
     --grid-item-qt: 4;
-    flex-basis: calc(
-      (100% - var(--grid-item-qt) * var(--grid-item-r-gap)) /
-        var(--grid-item-qt)
-    );
   }
 }
 
