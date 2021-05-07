@@ -6,8 +6,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: calc(-1 * var(--grid-item-r-gap));
-    margin-bottom: calc(-1 * var(--grid-item-b-gap));
+    justify-content: space-between;
   }
 }
 
@@ -24,17 +23,22 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
-    margin-right: var(--grid-item-r-gap);
-    margin-bottom: var(--grid-item-b-gap);
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: var(--grid-item-b-gap);
+    }
     flex-basis: calc(
-      (100% - var(--grid-item-qt) * var(--grid-item-r-gap)) /
+      (100% - ((var(--grid-item-qt) - 1) * var(--grid-item-r-gap))) /
         var(--grid-item-qt)
     );
   }
-
   @media screen and (min-width: 1200px) {
     --grid-item-qt: 4;
+
+    flex-basis: calc(
+      (100% - ((var(--grid-item-qt) - 1) * var(--grid-item-r-gap))) /
+        var(--grid-item-qt)
+    );
   }
 }
 

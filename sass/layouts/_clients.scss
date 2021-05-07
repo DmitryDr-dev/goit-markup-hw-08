@@ -1,20 +1,25 @@
 .clients {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin-right: calc(-1 * var(--grid-item-r-gap));
-  margin-bottom: calc(-1 * var(--grid-item-b-gap));
 }
-.list {
-}
+
 .clients__item {
   flex-basis: calc(
-    (100% - var(--grid-item-qt) * var(--grid-item-r-gap)) / var(--grid-item-qt)
+    (100% - ((var(--grid-item-qt) - 1) * var(--grid-item-r-gap))) /
+      var(--grid-item-qt)
   );
-  margin-right: var(--grid-item-r-gap);
-  margin-bottom: var(--grid-item-b-gap);
 
+  @media screen and (max-width: 767.98px) {
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: var(--grid-item-b-gap);
+    }
+  }
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     --grid-item-qt: 3;
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: var(--grid-item-b-gap);
+    }
   }
 
   @media screen and (min-width: 1200px) {
