@@ -861,9 +861,16 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .main-nav__contacts {
     display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-nav__contacts {
+    flex-direction: row-reverse;
   }
 }
 
@@ -874,13 +881,13 @@ body.modal-open {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .main-nav__contacts-item:not(:last-child) {
+  .main-nav__contacts-item:last-child {
     margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .main-nav__contacts-item:not(:last-child) {
+  .main-nav__contacts-item:last-child {
     margin-right: 30px;
   }
 }
