@@ -9,7 +9,7 @@
 .benefits__item {
   @media screen and (max-width: 767.98px) {
     &:not(:last-child) {
-      margin-bottom: 30px;
+      margin-bottom: var(--grid-item-b-gap);
     }
   }
 
@@ -51,7 +51,4 @@
   text-transform: uppercase;
   color: var(--title-text-color);
   text-align: center;
-}
-
-.benefits__item-desc {
 }

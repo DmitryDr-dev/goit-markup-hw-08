@@ -65,7 +65,7 @@
         <ul class="main-nav__contacts list">
 
           <li class="main-nav__contacts-item">
-            <a class="main-nav__contacts-link main-nav__contacts-link--accented link"
+            <a class="main-nav__contacts-link main-nav__contacts-link--highlighted link"
               href="tel:+380961111111">
               <svg class="main-nav__contacts-icon" width="10" height="16">
                 <use href="./images/icons/symbol-defs.svg#icon-header-tel"></use>
@@ -755,6 +755,56 @@
   </footer>
   <!-- /footer -->
 
+  <!-- modal -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal__close-btn" data-modal-close>
+        <svg class="modal__close-icon" width="11" height="11" aria-label="Закрыть окно">
+          <use href="./images/icons/symbol-defs.svg#icon-modal-close"></use>
+        </svg>
+      </button>
+      <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+      <form class="modal__form">
+        <label class="modal__form-field">
+          <span class="modal__form-label">Имя</span>
+          <input class="modal__form-input" type="text" name="name" placeholder=" ">
+          <svg class="modal__form-icon" width="12" height="12">
+            <use href="./images/icons/symbol-defs.svg#icon-modal-name"></use>
+          </svg>
+        </label>
+        <label class="modal__form-field">
+          <span class="modal__form-label">Телефон</span>
+          <input class="modal__form-input" type="tel" name="tel" placeholder=" ">
+          <svg class="modal__form-icon" width="13" height="13">
+            <use href="./images/icons/symbol-defs.svg#icon-modal-tel"></use>
+          </svg>
+        </label>
+        <label class="modal__form-field">
+          <span class="modal__form-label">Почта</span>
+          <input class="modal__form-input" type="mail" name="mail" placeholder=" ">
+          <svg class="modal__form-icon" width="15" height="12">
+            <use href="./images/icons/symbol-defs.svg#icon-modal-mail"></use>
+          </svg>
+        </label>
+        <label class="modal__form-field modal__form-comment">
+          <span class="modal__form-label">Комментарий</span>
+          <textarea class="modal__comment" name="comment" placeholder="Введите текст"></textarea>
+        </label>
+        <label class="modal__policy">
+          <input class="modal__policy-checkbox" type="checkbox" name="policy" value="agreed">
+          <svg class="modal__custom-checkbox" width="16" height="15">
+            <use href="./images/icons/symbol-defs.svg#icon-custom-checkbox"></use>
+          </svg>
+          <span class="modal__policy-text">
+            Соглашаюсь с рассылкой и принимаю
+            <a href="#" class="modal__policy-link">Условия договора</a>
+          </span>
+        </label>
+        <button class="modal__form-button btn" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <!-- /modal -->
 
   <!-- scripts -->
   <script src="./js/modal.js"></script>
